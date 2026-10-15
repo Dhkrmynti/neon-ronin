@@ -1,0 +1,13 @@
+{
+  "name": "neon-ronin-konten-x-studio",
+  "private": true,
+  "type": "module",
+  "description": "Renders the X content for Neon Ronin into konten-x/ from the art library and the preview set. No server needed.",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "playwright-core": "1.48.2"
+  }
+}

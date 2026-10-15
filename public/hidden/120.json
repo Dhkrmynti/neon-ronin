@@ -1,0 +1,11 @@
+{
+  "name": "Neon Ronin #120",
+  "description": "A sealed ronin. Its clan, armor and blade are revealed when all 888 have found a master. Neon Ronin is a collection of masterless robot samurai wandering the rain-soaked streets of Neo-Kyoto.",
+  "image": "http://localhost:5195/hidden/sealed.svg",
+  "attributes": [
+    {
+      "trait_type": "Status",
+      "value": "Sealed"
+    }
+  ]
+}

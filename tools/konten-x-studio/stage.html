@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Neon Ronin · konten X stage</title>
+    <link rel="stylesheet" href="/node_modules/@fontsource/dela-gothic-one/400.css" />
+    <link rel="stylesheet" href="/node_modules/@fontsource/zen-kaku-gothic-new/latin-400.css" />
+    <link rel="stylesheet" href="/node_modules/@fontsource/zen-kaku-gothic-new/latin-700.css" />
+    <link rel="stylesheet" href="/node_modules/@fontsource/jetbrains-mono/latin-400.css" />
+    <link rel="stylesheet" href="/node_modules/@fontsource/jetbrains-mono/latin-700.css" />
+    <style>
+      :root {
+        --night: #070814;
+        --pink: #ff2cb2;
+        --cyan: #22e3ff;
+        --yellow: #eedf39;
+        --vermilion: #e2412f;
+        --washi: #f1e8d4;
+        --display: "Dela Gothic One", sans-serif;
+        --body: "Zen Kaku Gothic New", sans-serif;
+        --mono: "JetBrains Mono", monospace;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #000; }
+      #stage { position: relative; overflow: hidden; background: var(--night); color: #eef0ff; font-family: var(--body); }
+      #stage > * { position: absolute; }
+      svg { display: block; }
+      .layer { position: absolute; inset: 0; }
+      .fill { inset: 0; }
+      .sky { inset: 0; background: radial-gradient(120% 80% at 70% 0%, #3a145e 0%, #1a0f3d 38%, var(--night) 78%); }
+      .moon { border-radius: 50%; background: radial-gradient(circle at 40% 38%, #ffd5ef 0%, #ff7ac8 45%, #b02a8c 100%); box-shadow: 0 0 140px 40px rgba(255, 44, 178, 0.35); }
+      .skyline { left: 0; bottom: 0; width: 100%; }
+      canvas.rain { inset: 0; pointer-events: none; }
+      .h { font-family: var(--display); text-transform: uppercase; line-height: 0.9; letter-spacing: 0.01em; margin: 0; }
+      .neon { color: #fff; text-shadow: 0 0 8px #fff, 0 0 24px var(--pink), 0 0 60px var(--pink), 0 0 120px rgba(255, 44, 178, 0.7); }
+      .pink { color: var(--pink); text-shadow: 0 0 26px rgba(255, 44, 178, 0.7); }
+      .kicker { font: 700 26px/1 var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--cyan); }
+      .center { left: 0; right: 0; text-align: center; }
+      .tag { position: absolute; font: 700 22px/1.25 var(--mono); padding: 8px 14px; background: rgba(7, 8, 20, 0.9); border: 2px solid var(--cyan); box-shadow: 0 0 24px rgba(34, 227, 255, 0.4); white-space: nowrap; transform: translate(-50%, -50%); }
+      .tag em { display: block; font-style: normal; font-size: 14px; letter-spacing: 0.2em; color: var(--cyan); text-transform: uppercase; }
+      .sign { display: flex; flex-direction: column; gap: 4px; padding: 16px 12px; border: 4px solid var(--pink); background: rgba(7, 8, 20, 0.6); font: 400 64px/1 var(--display); color: #fff;
+        text-shadow: 0 0 8px #fff, 0 0 24px var(--pink), 0 0 48px var(--pink); box-shadow: 0 0 30px rgba(255, 44, 178, 0.6), inset 0 0 18px rgba(255, 44, 178, 0.4); }
+      .frame { border: 14px solid #0b0b14; outline: 3px solid var(--cyan); box-shadow: 0 0 60px rgba(34, 227, 255, 0.35), 0 40px 80px rgba(0, 0, 0, 0.6); background: #0b0b14; }
+      .frame svg, .frame img { width: 100%; height: 100%; }
+      .ca { font: 700 30px/1.3 var(--mono); color: var(--yellow); border: 3px solid var(--yellow); background: #000; padding: 14px 26px; overflow-wrap: anywhere; box-shadow: 0 0 30px rgba(238, 223, 57, 0.35); }
+      .ca.soon { color: #7fe14b; border-color: #7fe14b; box-shadow: 0 0 30px rgba(127, 225, 75, 0.35); }
+      .meta { font: 700 28px/1.3 var(--mono); color: #c9cde8; letter-spacing: 0.06em; }
+      .domain { font: 700 24px/1 var(--mono); color: #fff; background: rgba(7, 8, 20, 0.7); padding: 8px 14px; border-left: 4px solid var(--pink); letter-spacing: 0.08em; }
+    </style>
+  </head>
+  <body>
+    <div id="stage"></div>
+    <script type="module" src="./stage.js"></script>
+  </body>
+</html>

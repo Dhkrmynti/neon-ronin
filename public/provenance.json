@@ -1,0 +1,5 @@
+{
+  "provenance": "0x4b1e2a7d648426774637ef0f05fe1fb8cf991a747f6bd0c12e32c24004de85cf",
+  "algorithm": "sha256(concat(sha256(image_i))) over the SVG files, in token order",
+  "supply": 888
+}

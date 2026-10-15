@@ -1,0 +1,13 @@
+node_modules
+dist
+*.log
+
+# The sealed drop: never commit or upload.
+vault/
+
+# X content: rendered locally, posted by hand, never committed.
+konten-x/
+tools/konten-x-studio/.frames/
+
+# The old static Webflow site: kept on this machine only (third-party template assets and fonts).
+legacy/
